@@ -22,9 +22,6 @@ public class Main {
             
             
             if (fieldLinesAndSpaces) {
-                
-                
-                
                 // print lines on top and bottom
                 for(int rowIndex2DArray = 0; rowIndex2DArray <= output2DArray.length; rowIndex2DArray++) {
                     for(int columnIndex2DArray = 0; columnIndex2DArray < output2DArray[1].length; columnIndex2DArray++) {
