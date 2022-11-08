@@ -127,10 +127,7 @@ public class Main {
                 
             }
             
-            
-            
-            
-            
+
             // print whole 2D array
             for(int rowIndex2DArray = 0; rowIndex2DArray < output2DArray.length; rowIndex2DArray++) {
                 for(int columnIndex2DArray = 0; columnIndex2DArray < output2DArray[1].length; columnIndex2DArray++) {
@@ -146,16 +143,8 @@ public class Main {
             
     }
     
-    
 
-    
-    
     public static void main(String[] args) {
-        
-        
-        
-        
-    
 
         // get scanner class an create scanner
         Scanner scanner = new Scanner(System.in);
@@ -170,9 +159,6 @@ public class Main {
         // declare and initialilze 2DArray
         char output2DArray[][] = new char[nRows2DArray][nColums2DArray];
 
-
-
-
                     // define size of 2DDATAArray
             int nRows2DDataArray = pulledRoot1DarrayAsInteger;
             int nColums2DDataArray = pulledRoot1DarrayAsInteger;
@@ -186,10 +172,6 @@ public class Main {
 
             //String rowCoordinateInputFromGamer = scanner.next();
             //String columnCoordinateInputFromGamer = scanner.next();
-
-
-
-
 
 
 
@@ -221,9 +203,6 @@ public class Main {
                 }
 
             }
-
-            
-
 
 
             while (winnerFound == false || caseDRAW == false) {
@@ -295,10 +274,6 @@ public class Main {
                             continue;
                         }   
                         
-
-
-
-                
 
                     userInputRowConvertedToInt--;
                     userInputColumnConvertedToInt--;
