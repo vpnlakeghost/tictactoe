@@ -2,12 +2,7 @@ import java.util.*;
 import java.lang.*;
 
 
-
-
-
 public class Main {
-    
-    
   
     public static void printGameField (int pulledRoot1DarrayAsInteger, 
                                        char output2DArray[][],
@@ -39,9 +34,7 @@ public class Main {
                         }
                     }
                 }
-                
-            
-                
+
                 
                 // FILL ARRAY GAME FIELDS WITH BOTTOM LINE
                 int oneDArrayIndexCounterEmptyFieldInput = 0;
@@ -61,8 +54,7 @@ public class Main {
     
                     }
                 }
-                
-                
+
                 
                 // FILL FIELDS OF ARRAY WHICH ARE NOT USED FOR GAME WITH EMPTY SPACE
                 for(int rowIndex2DArray = 1; rowIndex2DArray <= pulledRoot1DarrayAsInteger; rowIndex2DArray++) {
@@ -79,18 +71,13 @@ public class Main {
     
                     }
                 }
-                
 
-            
             }
-            
-            
+
             // fill data into 2d game array from 2d data array
             
             if(dataPlayers) {
-                
 
-                
                 // FILL ARRAY with GAMER DATA
                 
                 int rowCounterToFill = 0;
@@ -109,11 +96,7 @@ public class Main {
                             // fill 2D array with gamer input
                             
                             output2DArray[rowIndex2DArray][columnIndex2DArray] = data2DArray[rowCounterToFill][columnCounterToFill];    
-                           
-                            
-                            
-                            
-    
+
                             columnCounterToFill++;
     
                         } else {
@@ -126,7 +109,6 @@ public class Main {
                 
                 
             }
-            
 
             // print whole 2D array
             for(int rowIndex2DArray = 0; rowIndex2DArray < output2DArray.length; rowIndex2DArray++) {
@@ -139,8 +121,7 @@ public class Main {
             if(infoText != null) {
                 System.out.println(infoText);    
             }
-            
-            
+
     }
     
 
@@ -165,7 +146,6 @@ public class Main {
 
             // declare and initialilze 2DDataArray
             char data2DArray[][] = new char[nRows2DDataArray][nColums2DDataArray];
-
 
 
             printGameField(pulledRoot1DarrayAsInteger, output2DArray, data2DArray, null, true, false);
