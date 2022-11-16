@@ -29,7 +29,6 @@ public class Main {
 
 
             Printer.printGameField(pulledRoot1DarrayAsInteger, output2DArray, data2DArray, null, true, false);
-            Featuretest.connectionTest();
         //Printer printerObject = new Printer();
 
             //String rowCoordinateInputFromGamer = scanner.next();
@@ -54,7 +53,7 @@ public class Main {
             int nSucessfulMovesMade = 0;
             
             
-            // fill 2dData array so there are no empty fields an stage 5/5 can be passed. this fields will be overritten by moves of players
+            // fill 2dData array so there are no empty fields and stage 5/5 can be passed. this fields will be overritten by moves of players
             for(int rowIndex2DArray = 0; rowIndex2DArray < data2DArray.length; rowIndex2DArray++) {
                 for(int columnIndex2DArray = 0; columnIndex2DArray < data2DArray[0].length; columnIndex2DArray++) {
 
