@@ -16,29 +16,35 @@ public class Main {
         // define size of 2DArray
         final int nRows2DArray = pulledRoot1DarrayAsInteger + 2;
         final int nColums2DArray = pulledRoot1DarrayAsInteger + 6;
+        //String rowCoordinateInputFromGamer = scanner.next();
+        //String columnCoordinateInputFromGamer = scanner.next();
 
         // declare and initialilze 2DArray
         char output2DArray[][] = new char[nRows2DArray][nColums2DArray];
 
-                    // define size of 2DDATAArray
-            int nRows2DDataArray = pulledRoot1DarrayAsInteger;
-            int nColums2DDataArray = pulledRoot1DarrayAsInteger;
+        // define size of 2DDATAArray
+        int nRows2DDataArray = pulledRoot1DarrayAsInteger;
+        int nColums2DDataArray = pulledRoot1DarrayAsInteger;
 
-            // declare and initialilze 2DDataArray
-            char data2DArray[][] = new char[nRows2DDataArray][nColums2DDataArray];
+        // declare and initialilze 2DDataArray
+        char data2DArray[][] = new char[nRows2DDataArray][nColums2DDataArray];
 
-
-            Printer.printGameField(pulledRoot1DarrayAsInteger, output2DArray, data2DArray, null, true, false);
-        //Printer printerObject = new Printer();
-
-            //String rowCoordinateInputFromGamer = scanner.next();
-            //String columnCoordinateInputFromGamer = scanner.next();
-
-
+        // print empty game field before start of game
+        Printer.printGameField(pulledRoot1DarrayAsInteger, output2DArray, data2DArray, null, true, false);
 
 //COMMENT START: LOOP OVER 2D DATA ARRAY AND CHECK IF THERE IS A WINNER IN A ROW
 ///*
+        // fill 2dData array so there are no empty fields and stage 5/5 can be passed. this fields will be overritten by moves of players
+        for(int rowIndex2DArray = 0; rowIndex2DArray < data2DArray.length; rowIndex2DArray++) {
+            for(int columnIndex2DArray = 0; columnIndex2DArray < data2DArray[0].length; columnIndex2DArray++) {
 
+
+                data2DArray[rowIndex2DArray][columnIndex2DArray] = '_';
+
+
+            }
+
+        }
 
             // create checker variables to check cases like draw, impossible, game not finished
             boolean resultStorageX = false;
@@ -51,19 +57,7 @@ public class Main {
             int playedOCounter = 0;
             int occupiedFields = 0;
             int nSucessfulMovesMade = 0;
-            
-            
-            // fill 2dData array so there are no empty fields and stage 5/5 can be passed. this fields will be overritten by moves of players
-            for(int rowIndex2DArray = 0; rowIndex2DArray < data2DArray.length; rowIndex2DArray++) {
-                for(int columnIndex2DArray = 0; columnIndex2DArray < data2DArray[0].length; columnIndex2DArray++) {
 
-
-                    data2DArray[rowIndex2DArray][columnIndex2DArray] = '_';
-
-
-                }
-
-            }
 
 
             while (winnerFound == false || caseDRAW == false) {
@@ -376,14 +370,6 @@ boolean checkerCaseRow = false;
 //COMMENT END
 
 //COMMENT START: print the correct winner
-
-
-
-            
-
-            
-
-
 
 
 //COMMENT END
